@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.frame {
+    border: 2px solid #EE2200;
+    border-radius: 8px;
+    width: 100%;
+    height: 550px;
+    padding: 25px;
+}
+
+.grid {
+    box-shadow: inset 0 0 3px #333;
+    background-color: rgb(170,208,230);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-cell {
+    border: 0.1px solid rgba(128,166,208, 0.6);
+    flex-grow: 1;
+}
