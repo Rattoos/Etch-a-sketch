@@ -1,11 +1,7 @@
 const Sketch = document.querySelector('.Sketch');
 
 let grid_height = 450;
-//let newCell = [];
-//let cellID;
-//let cells;
-//
-//let backgroundStyle = 0;
+
 
 function generateGrid(size) {
     clearGrid();
