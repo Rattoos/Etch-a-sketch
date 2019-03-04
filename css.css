@@ -1,7 +1,38 @@
-.frame {
-    border: 2px solid #EE2200;
-    border-radius: 25px;
-    width: 350px;
-    height: 350px;
-    padding: 25px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "r" "containerGrid";
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.buttons {
+    grid-area: r;
+    text-align: center;
+}
+
+.btn {
+    height: 40px;
+    width: 80px;
+    margin-right: 2px;
+}
+
+.containerGrid {
+    border: 10px solid rgb(160, 32, 32);
+    display: grid;
+    grid-area: containerGrid;
+    grid-template-columns: repeat(var(--grid), 1fr);
+    grid-template-rows: repeat(var(--grid), 1fr);
+	justify-self: center;
+    width: 500px;
+    height: 500px;
+}
+
+.box {
+    background: #999999;
+}
+
+.newBox {
+    background: #000000;
 }
